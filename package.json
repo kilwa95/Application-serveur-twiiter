@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "NODE_ENV=development nodemon ./bin/www",
-    "start:prod": "NODE_ENV=production nodemon ./bin/www",
+    "start": "NODE_ENV=development nodemon",
+    "start:prod": "NODE_ENV=production nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
