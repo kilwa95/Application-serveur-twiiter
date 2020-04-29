@@ -28,3 +28,7 @@ exports.findUserPerId = (id) => {
 exports.findUserPerGoogleId = (googleId) => {
   return User.findOne({ 'local.googleId': googleId }).exec();
 }
+
+exports.findUserPerUsername = (username) => {
+  return User.findOne({ username }).exec();
+}
