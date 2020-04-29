@@ -14,8 +14,11 @@ const userSchema = schema({
     password: { type: String, required: true },
     googleId: {type: String}
   },
-  avatar: { type: String, default: '/images/profile.png' }
+  avatar: { type: String, default: '/images/profile.png' },
+  following: { type: [schema.Types.ObjectId], ref: 'user' }
 });
+
+
 
 
 
