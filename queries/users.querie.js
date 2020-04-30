@@ -32,3 +32,9 @@ exports.findUserPerGoogleId = (googleId) => {
 exports.findUserPerUsername = (username) => {
   return User.findOne({ username }).exec();
 }
+
+exports.searchUsersPerUsername = (search) => {
+  const regExp = `^${ search }`;
+  const reg = new RegExp(regExp);
+  return User.find({ username: { $regex: reg } }).exec();
+}
