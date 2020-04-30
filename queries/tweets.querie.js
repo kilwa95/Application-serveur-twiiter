@@ -26,7 +26,7 @@ exports.updateTweet = (tweetId, tweet) => {
   }
 
   exports.getUserTweetsFormAuthorId = (authorId) => {
-    return Tweet.find({ author: authorId })/populate().exec();
+    return Tweet.find({ author: authorId }).populate().exec();
   }
 
   exports.getUserTweetsFormAuthorId = (authorId) => {
